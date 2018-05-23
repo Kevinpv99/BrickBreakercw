@@ -61,6 +61,8 @@ public class runbricks
 
 	
 		double posx1,posy1,posx2,posy2,posx3,posy3;
+		double speedofx=-2;
+		double speedofy=-8;
 			}
 	
 	

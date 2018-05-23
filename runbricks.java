@@ -1,5 +1,8 @@
 
-
+//This is my attempt at a Brick Breaker game. It has multiple balls and also has multiple bricks.
+//the balls move and bounce off all the walls of the game arena. 
+//Also everything has been added to the game arena which allows it all to be on the same screen. 
+// it is 1000 by 1000 and bricks have been put in it accordingly to the frames. 
 public class runbricks
 {
 	public static void main(String[] args)
@@ -60,7 +63,62 @@ public class runbricks
 
 
 	
+		double posx1,posy1,posx2,posy2,posx3,posy3;
+		double speedofx=-2;
+		double speedofy=-8;
+		while(true)
+		{
+
+			posx1 = ball1.getXPosition();
+			ball1.setXPosition(posx1+speedofx);
+			if(posx1+speedofx>1000)
+				speedofx=-speedofx;
+			else if(posx1+speedofx<0)
+				speedofx=-speedofx;
+
+			posy1 = ball1.getYPosition();
+			ball1.setYPosition(posy1+speedofy);
+			if(posy1+speedofy>1000)
+				speedofy=-speedofy;
+			else if(posy1+speedofy<0)
+				speedofy=-speedofy;
+
+
 		
+			posx2 = ball2.getXPosition();
+			ball2.setXPosition(posx2+speedofx);
+			if(posx2+speedofx>1000)
+				speedofx=-speedofx;
+			else if(posx2+speedofx<0)
+				speedofx=-speedofx;
+
+			posy2 = ball2.getYPosition();
+			ball2.setYPosition(posy2+speedofy);
+			if(posy2+speedofy>1000)
+				speedofy=-speedofy;
+			else if(posy2+speedofy<0)
+				speedofy=-speedofy;
+
+			posx3 = ball3.getXPosition();
+			ball3.setXPosition(posx3+speedofx);
+			if(posx3+speedofx>1000)
+				speedofx=-speedofx;
+			else if(posx3+speedofx<0)
+				speedofx=-speedofx;
+
+			posy3 = ball3.getYPosition();
+			ball3.setYPosition(posy3+speedofy);
+			if(posy3+speedofy>1000)
+				speedofy=-speedofy;
+			else if(posy3+speedofy<0)
+				speedofy=-speedofy;
+
+
+
+			
+
+			arena.update();
+		}
 	}
 	
 	

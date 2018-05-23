@@ -7,14 +7,18 @@ public class runbricks
 {
 	public static void main(String[] args)
 	{
+/*this part of my code makes the several bricks for my game
+it also makes the game arena and it assigns it the name arena. It also makes it 1000 by 1000
+and adds all my bricks to it and updates the arena when any of my bricks are added. The colour of the bricks are blue 
+and also the balls are declared here and assigned coordinates on the gamearena.  */ 
 		GameArena arena = new GameArena(1000,1000);
 
     
-    		blocks brick1 = new blocks(500,100, "BLUE");
+    		blocks brick1 = new blocks(500,100, "BLUE");    			
     		brick1.addTo(arena);
 		arena.update();
-		
-		blocks brick2 = new blocks(300,100, "BLUE");
+			
+		blocks brick2 = new blocks(300,100, "BLUE");			
     		brick2.addTo(arena);
 		arena.update();
 

@@ -82,7 +82,24 @@ public class runbricks
 
 
 		
-			
+			posx2 = ball2.getXPosition();
+			ball2.setXPosition(posx2+speedofx);
+			if(posx2+speedofx>1000)
+				speedofx=-speedofx;
+			else if(posx2+speedofx<0)
+				speedofx=-speedofx;
+
+			posy2 = ball2.getYPosition();
+			ball2.setYPosition(posy2+speedofy);
+			if(posy2+speedofy>1000)
+				speedofy=-speedofy;
+			else if(posy2+speedofy<0)
+				speedofy=-speedofy;
+
+		
+
+
+
 			
 
 			arena.update();

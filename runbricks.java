@@ -96,7 +96,19 @@ public class runbricks
 			else if(posy2+speedofy<0)
 				speedofy=-speedofy;
 
-		
+			posx3 = ball3.getXPosition();
+			ball3.setXPosition(posx3+speedofx);
+			if(posx3+speedofx>1000)
+				speedofx=-speedofx;
+			else if(posx3+speedofx<0)
+				speedofx=-speedofx;
+
+			posy3 = ball3.getYPosition();
+			ball3.setYPosition(posy3+speedofy);
+			if(posy3+speedofy>1000)
+				speedofy=-speedofy;
+			else if(posy3+speedofy<0)
+				speedofy=-speedofy;
 
 
 

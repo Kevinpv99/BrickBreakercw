@@ -63,7 +63,31 @@ public class runbricks
 		double posx1,posy1,posx2,posy2,posx3,posy3;
 		double speedofx=-2;
 		double speedofy=-8;
-			}
+		while(true)
+		{
+
+			posx1 = ball1.getXPosition();
+			ball1.setXPosition(posx1+speedofx);
+			if(posx1+speedofx>1000)
+				speedofx=-speedofx;
+			else if(posx1+speedofx<0)
+				speedofx=-speedofx;
+
+			posy1 = ball1.getYPosition();
+			ball1.setYPosition(posy1+speedofy);
+			if(posy1+speedofy>1000)
+				speedofy=-speedofy;
+			else if(posy1+speedofy<0)
+				speedofy=-speedofy;
+
+
+		
+			
+			
+
+			arena.update();
+		}
+	}
 	
 	
 	

@@ -58,9 +58,11 @@ public class runbricks
 		
 		arena.update();
 
-		}
-	
 
+	
+		double posx1,posy1,posx2,posy2,posx3,posy3;
+			}
+	
 	
 	
 }
